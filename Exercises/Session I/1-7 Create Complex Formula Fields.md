@@ -1,4 +1,4 @@
-# 1-4: Create Complex Formula Fields
+# 1-7: Create Complex Formula Fields
 
 Create custom Formula field that calculates the Course Cancellation Rate
 

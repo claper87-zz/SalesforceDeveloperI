@@ -1,4 +1,4 @@
-# 1-4: Creating Fomurla Fields
+# 1-4: Creating Formula Fields
 
 Create custom formula fields on the Class object.
 

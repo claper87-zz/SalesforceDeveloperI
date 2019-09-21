@@ -9,6 +9,6 @@ This exercise prepares your Salesforce Developer Org for the up comming exercise
 Open the developer console -> cmd+e
 ``` PackageScripts.install() ```
 4. Verify you have new records of the following types: 
-- Certifications
-- Courses
-- Classes
+  - Certifications
+  - Courses
+  - Classes

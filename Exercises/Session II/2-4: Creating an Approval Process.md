@@ -24,7 +24,9 @@ Create a new custom field & Email template
    - __Name:__ Update Use for Public Content
    - __Field to Update:__ Use for Public Content
    - __Specify New Field Value:__ True
-5. Activate the Process Builder
+5. Edit Initial Submitters
+   - Add "Record Creator" to list
+6. Activate the Process Builder
 
 
 

@@ -19,9 +19,15 @@ Create custom Workflow Rules
 2. Use the steup menu to create a new Email Template
    - __Type:__ Custom
    - __Available for Use:__ true
-   - __Email Template Name:__ Student Registration
+   - __Email Template Name:__ Step Attempt Registration Confirmation
    - __Subject:__ ```You have been Registered for {!Step_Attempt__c.Certification_Step__c}```
    - __Email Body:__ ```Hi,<br/> <p>You have been registered to take {!Step_Attempt__c.Certification_Step__c} on {!Step_Attempt__c.Date_Registered__c}.</p> <p>Regards,<br/> CourseWare Management</p>```
+2.1  Clone the newly Created Email Template
+   - __Type:__ Custom
+   - __Available for Use:__ true
+   - __Email Template Name:__ Step Attempt Reminder
+   - __Subject:__ ```Your examination for {!Step_Attempt__c.Certification_Step__c} is coming up```
+   - __Email Body:__ ```Hi,<br/> <p>On your upcoming examination {!Step_Attempt__c.Certification_Step__c} is due on {!Step_Attempt__c.Date_Registered__c} .</p> <p>Regards,<br/> CourseWare Management</p>```
 3. Use the setup menu to add a new Workflow Rule on the Stemp_Attempt Object
    - __Object:__ Step Attempt
    - __Rule Name:__ SA001 Registration Actions
@@ -30,13 +36,19 @@ Create custom Workflow Rules
    - __Rule Criteria:__ Criteria are met |  Step Attempt: Step Attemp  :: not equal to :: blank
 4. Create an Immediate Workflow Action
    - __Type:__ Email Alert
-   - __Description:__ SA001 Sends Student Registration Confirmation
-   - __Email Template:__ ```SA001 Send Registration Email```
+   - __Description:__ Sends Step Attempt Registration Email
+   - __Email Template:__ ```Step Attempt Registration ```
    - __Recipient Type:__ Email Field :: Student Email
 5. Create an Immediate Workflow Action
    - __Type:__ Field Update
-   - __Description:__ SA001 Updates Student Email
+   - __Description:__ Updates Step Attempt Student Email
    - __Specify New Field Value:__ Use a formula to set the new value
    - __Formula:__ ``` Student__r.Contact__r.Email ```
+6. Create an Time-Dependent Workflow Action
+   - __Time Trigger Edit:__ 5 days before Date Registered
+   - __Type:__ Email Alert
+   - __Description:__ Send Step Attempt Remainder Email
+   - __Email Template:__ ```Stept Attempt Reminder ```
+   - __Recipient Type:__ Email Field :: Student Email
 
 

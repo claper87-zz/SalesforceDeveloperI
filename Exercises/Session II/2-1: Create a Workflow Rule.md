@@ -30,7 +30,7 @@ Create custom Workflow Rules
    - __Email Body:__ ```Hi,<br/> <p>On your upcoming examination {!Step_Attempt__c.Certification_Step__c} is due on {!Step_Attempt__c.Date_Registered__c} .</p> <p>Regards,<br/> CourseWare Management</p>```
 3. Use the setup menu to add a new Workflow Rule on the Stemp_Attempt Object
    - __Object:__ Step Attempt
-   - __Rule Name:__ SA001 Registration Actions
+   - __Rule Name:__  Registration Actions
    - __Description:__ Handle all actions related to registration
    - __Evaluation Criteria:__ ```created ```
    - __Rule Criteria:__ Criteria are met |  Step Attempt: Step Attemp  :: not equal to :: blank

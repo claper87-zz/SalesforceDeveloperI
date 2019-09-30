@@ -25,7 +25,7 @@ Create custom Process Builder, and de-activate the previously created Workflow R
 4. Add an Immediate  Action
    - __Type:__ Email Alert
    - __Name:__ Sends Student Registration Email
-   - __Email Alert:__ ```SA001 Sends Student Registration Confirmation```
+   - __Email Alert:__ ```Sends Student Registration Confirmation```
 5. Create an Immediate  Action
    - __Type:__ Update Records
    - __Name:__ Update Student Email

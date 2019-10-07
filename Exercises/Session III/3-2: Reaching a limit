@@ -1,0 +1,8 @@
+for(Integer i = 0; i < 151; i++)
+{
+    try{
+        Id createdContact = ContactManager.addContact('Perez '+i,'Clara');
+    }catch(exception e){
+        system.debug('attempt to handle exception');
+    }
+}

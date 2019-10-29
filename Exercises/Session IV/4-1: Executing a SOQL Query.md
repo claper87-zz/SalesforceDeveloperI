@@ -7,4 +7,4 @@ Create custom Workflow Rules
 
 ## Instructions:
 1. Use the Developer Console to Execute the Following query
-   - ```Select Id, Name FROM Account```
+   - ```Select Name, Industry, Website FROM Account```
